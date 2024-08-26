@@ -5,7 +5,7 @@ import axios from "axios";
 export const authenticateUser = async (name, password) => {
   try {
     const res = await axios.post(
-      `${process.env.REACT_APP_SERVER_URL}/login`,
+      `${process.env.REACT_APP_SERVER_URL}login`,
       {
         name,
         password,
